@@ -18,7 +18,7 @@ let appInitialized = false;
 
 async function loadMenu() {
     try {
-        const response = await fetch('/api/menu');
+        const response = await fetch('/data/menu_items.json');
         const data = await response.json();
         menuData = data.map(item => new MenuItem(item.id, item.name, item.category, item.price, item.image, item.description));
         renderMenuGrid();

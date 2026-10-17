@@ -27,11 +27,12 @@ let __logsStream = undefined;
  * 
  * @param options.changeFilePath
  *        Indicates the logger change the existing stream path.  
- *        It is important to be true; otherwise strams's path 
+ *        It is important to be true; otherwise streams's path 
  *        wouldn't change.
  * 
  * @param options.closeStream
- *        Indicates the logger to close a the file path and 
+ *        Indicates the logger to close a the file path and
+ *        writable stream.
  * 
  * @Note By Default the logger is set to write logs.
  */
