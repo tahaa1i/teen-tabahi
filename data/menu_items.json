@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Delicious Pizza",
+    "category": "pizza",
+    "price": 2000,
+    "image": "images/f1-image.png",
+    "description": "Cheesy and hot pizza with fresh toppings."
+  },
+  {
+    "id": 2,
+    "name": "Classic Burger",
+    "category": "burger",
+    "price": 500,
+    "image": "images/f2image.png",
+    "description": "Spicy"
+  },
+  {
+    "id": 3,
+    "name": "Cheese Pizza",
+    "category": "pizza",
+    "price": 1200,
+    "image": "images/f3image.png",
+    "description": "Loaded with mozzarella cheese and herbs."
+  },
+  {
+    "id": 4,
+    "name": "Creamy Pasta",
+    "category": "pasta",
+    "price": 750,
+    "image": "images/f4image.png",
+    "description": "Creamy pasta with mushrooms and parmesan."
+  },
+  {
+    "id": 5,
+    "name": "Classic Fries",
+    "category": "fries",
+    "price": 150,
+    "image": "images/f5image.png",
+    "description": "Smoky Fries."
+  },
+  {
+    "id": 6,
+    "name": "Pepperoni Pizza",
+    "category": "pizza",
+    "price": 1300,
+    "image": "images/f6.png",
+    "description": "Pepperoni slices with extra cheese."
+  },
+  {
+    "id": 7,
+    "name": "Beef patty burger",
+    "category": "burger",
+    "price": 850,
+    "image": "images/f7.png",
+    "description": "Grilled beef patty with lettuce and tomato."
+  },
+  {
+    "id": 8,
+    "name": "Chicken Burger",
+    "category": "burger",
+    "price": 450,
+    "image": "images/f8.png",
+    "description": "Goated Burger with special sauce."
+  },
+  {
+    "id": 9,
+    "name": "Spaghetti",
+    "category": "pasta",
+    "price": 1000,
+    "image": "images/f9.png",
+    "description": "Classic spaghetti with tomato sauce."
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "description": "Bare-NodeJS, low package-dependency, and fast server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "watch": "node --watch server.js"
+  },
+  "author": "Muhammad Taha Ali",
+  "license": "MIT",
+  "type": "module"
+}

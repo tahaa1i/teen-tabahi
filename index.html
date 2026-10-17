@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <title>teen tabahi</title>
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="hero"></div>
+    <div id="offers"></div>
+    <div id="menu"></div>
+    <div id="about"></div>
+    <div id="book-table"></div>
+    <div id="cart-modal"></div>
+    <div id="login-modal"></div>
+    <div id="search-modal"></div>
+    <div id="checkout-overlay"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        const components = [
+            { id: 'navbar', file: 'navbar.html' },
+            { id: 'hero', file: 'hero.html' },
+            { id: 'offers', file: 'offers.html' },
+            { id: 'menu', file: 'menu.html' },
+            { id: 'about', file: 'about.html' },
+            { id: 'book-table', file: 'book-table.html' },
+            // file names use "model" in repository (cart-model/login-model)
+            { id: 'cart-modal', file: 'cart-model.html' },
+            { id: 'login-modal', file: 'login-model.html' },
+            { id: 'search-modal', file: 'search-modal.html' },
+            { id: 'checkout-overlay', file: 'checkout-overlay.html' }
+        ];
+
+        // Fetch all components and dispatch an event when finished so app can initialize
+        const fetches = components.map(c =>
+            fetch(`component/${c.file}`)
+                .then(res => {
+                    if (!res.ok) throw new Error(`Failed to load ${c.file}: ${res.status}`);
+                    return res.text();
+                })
+                .then(html => {
+                    const el = document.getElementById(c.id);
+                    if (el) el.innerHTML = html;
+                })
+        );
+
+        Promise.all(fetches)
+            .then(() => {
+                // signal that components are ready
+                window.dispatchEvent(new Event('componentsLoaded'));
+            })
+            .catch(err => console.error('Error loading components', err));
+    </script>
+
+    <!-- App JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

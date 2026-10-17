@@ -1,0 +1,19 @@
+<div class="modal fade" id="cartModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Your Cart (<span id="cartCount">0</span>)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div id="cartItems"></div>
+                <div class="mt-4 p-3 bg-light rounded">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <strong>Total: Rs<span id="cartTotal">0</span></strong>
+                        <button class="btn order-btn w-100" onclick="showCheckout()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

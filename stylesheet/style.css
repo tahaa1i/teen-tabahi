@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/hero-bg.jpg') center/cover fixed;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffc107 !important;
+}
+
+.navbar-icons i {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.navbar-icons i:hover {
+    color: #ffc107;
+}
+
+/* Buttons */
+.order-btn {
+    background: #ffc107;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.order-btn:hover {
+    background: #ff9800;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero-section h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    color: #fff;
+}
+
+.hero-section p {
+    color: #eee;
+    font-size: 1.3rem;
+}
+
+/* Offer Cards */
+.box {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.img-box2 {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.detail-box {
+    padding: 20px;
+    text-align: center;
+}
+
+.form-label {
+    color: black;
+}
+
+.order-btn {
+    background: #ffc107;
+    color: #000;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.img-box2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: top;
+    display: block;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+/* Menu Section */
+.menu-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #333;
+}
+
+.filter-btn {
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    color: #495057;
+    padding: 10px 25px;
+    border-radius: 50px;
+    margin: 5px;
+    transition: all 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+.menu-card {
+    background: rgb(197, 197, 197);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.img-box img {
+    width: 99%;
+    height: 275px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.content-box {
+    padding: 20px;
+}
+
+.content-box h5 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.price-row span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+
+.cart-btn {
+    background: #ffc107;
+    border: none;
+    width: auto;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+    padding: 10px 20px;
+}
+#book-table{
+    color: white;
+}
+.form-label{
+color: white;
+}
+.cart-btn:hover {
+    background: #ff9800;
+    transform: scale(1.1);
+}
+
+/* Checkout */
+.checkout-section {
+    background-image: '../images/hero-bg.jpg';
+    min-height: 100vh;
+    padding: 100px 0;
+}
+
+.checkout-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.checkout-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 3rem;
+    }
+
+    .menu-title,
+    .checkout-title {
+        font-size: 2.5rem;
+    }
+}
